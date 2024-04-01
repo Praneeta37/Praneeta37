@@ -1,0 +1,48 @@
+Assignment:
+
+1.psvm with args:
+
+class Student{
+public static void main(String args[]){
+System.out.println("good morning");
+}
+}
+
+o/p-----good morning
+
+2.psvm without args:
+
+class Student{
+public static void main(){
+System.out.println("good morning");
+}
+}
+
+o/p-----
+Error: Main method not found in class com.Student, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+3.spvm(args)
+
+public class Student {
+//public static void main() {
+	 static public void main(String[] args) {
+System.out.println("gm");
+}
+}
+
+4.psm(args):
+
+public class Student {
+//public static  main(String args[]) {
+	  public static  main(String[] args) {
+System.out.println("gm");
+}
+}
+
+Error: Main method not found in class com.Student, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+

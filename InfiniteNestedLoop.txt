@@ -1,0 +1,79 @@
+when the for loop become infinite:
+   example 1:
+   ========
+             public class InfiniteLoop {
+          public static void main(String[] args) {
+	for(int i=0; ;) {
+		System.out.println("hi");
+	}
+}
+}
+o/p
+=======
+hi
+hi
+hi
+hi
+hi
+hi
+.
+.
+.
+.
+infinite times
+
+example 2:
+========
+                   public class InfiniteLoop {
+          public static void main(String[] args) {
+	for(int i=0; i<1;) {
+		System.out.println("hi");
+	}
+}
+}
+
+o/p
+======
+hi
+hi
+hi
+hi
+hi
+.
+.
+.
+.
+infinite times
+
+Nested Loop :
+==========
+A loop inside another loop is call Nested Loop.
+
+public class InfiniteLoop {
+public static void main(String[] args) {
+	for(int i=0;i<4;i++) {
+		for(int j=0;j<2;j++) {
+			System.out.println("hi");
+		}
+		System.out.println("hello");
+	
+	}
+}
+}
+
+o/p
+=====
+hi
+hi
+hello
+hi
+hi
+hello
+hi
+hi
+hello
+hi
+hi
+hello
+
+

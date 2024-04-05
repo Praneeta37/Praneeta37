@@ -1,0 +1,28 @@
+constructor
+===========
+package com;
+
+public class Constructor {
+	private String name;
+	private int age;
+	Constructor(String n,int  a){
+		name=n;
+		age=a;
+		System.out.println("i'm "+name+" and my age is "+age);
+	}
+}
+
+package com;
+
+public class TestConstructor {
+	public static void main(String[] args) {
+		Constructor constructor=new Constructor("Praneeta",22);
+			}
+	}
+
+o/p
+====
+i'm Praneeta and my age is 22
+
+	
+

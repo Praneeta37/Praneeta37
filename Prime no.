@@ -1,0 +1,67 @@
+Task 1.find  Prime no. upto n. n is an integer:
+==============================================
+package com;
+
+public class PrimeNo {
+public static void main(String[] args) {
+	int n=6;
+	int c=0;
+
+	for(int i=1;i<=n;i++) {
+		if(n%i==0) {
+			c++;
+		}
+	}
+		if (c==2) {
+			System.out.println(n+" is prime number");
+		}
+		else {
+			System.out.println(n+" is not a prime no.");
+		}
+	}
+}
+	
+o/p:
+======
+6 not a prime no.
+
+OR
+package com;
+
+public class PrimeNo {
+public static void main(String[] args) {
+	int n=7;
+	int c=0;
+	//int flg;
+
+	for(int i=2;i<=n;i++) {
+		c=1;
+		for(int j=2;j<i;j++) {
+			if(i%j==0) {
+				c=0;
+			break;
+		}
+		}
+	
+		if (c==1) {
+			System.out.println(i+" is prime number");
+		}
+	
+		else {
+			System.out.println(i+" is not a prime no.");
+		}}
+	}}
+
+	o/p
+========
+2 is prime number
+3 is prime number
+4 is not a prime no.
+5 is prime number
+6 is not a prime no.
+7 is prime number
+
+
+
+
+

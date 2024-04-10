@@ -1,0 +1,159 @@
+Task 1:
+what if my child class has lesser access modifier
+	// private void walk()
+
+It will not be visible to the TestClass  or in main() program if we write the main method in diff class.
+
+2. Calc, scientific calc, programmer calc - implement complete inheritance(overriding,uniq methd...)
+
+
+Calculator
+
+	addition() {}
+	multiplication() {}
+	division() {}
+	substraction() {}
+                
+ScientificCalculator
+
+	addition() {}
+	multiplication() {}
+	division() {}
+	substraction() {}
+                 trignomentry(){} -unique method
+
+programmerCalculator
+
+	addition() {}
+	multiplication() {}
+	division() {}
+	substraction() {}
+                bitwise(){} - unique method
+
+ScientificCalculator extends (is a) Calculator=>ScientificCalculator  can access all the methods of Calculator(if method is not private)
+programmerCalculator extends (is a) Calculator=>programmerCalculator  can access all the methods of Calculator
+
+
+
+public class Calculator {
+
+	void addition() {
+		System.out.println("addition");
+	}
+	void multiplication() {
+		System.out.println("multiplication");
+
+		
+	}
+	void division() {
+		System.out.println("division");
+
+	}
+	void substraction() {
+		
+		System.out.println("substraction");
+
+}
+}
+
+
+
+public class ScientificCalculator extends Calculator{
+	void addition() {
+		System.out.println("addition");
+	}
+	void trignomentri() {
+		System.out.println("trignomentri");
+	}
+}
+
+
+
+public class ProgrammerCalculator extends Calculator{
+void addition()
+{
+	System.out.println("addition");
+	
+}
+void bitwise() {
+	System.out.println("bitwise");
+}
+}
+
+
+public class TestCalculator {
+	public static void main(String[] args) {
+		Calculator calculator=new Calculator();
+		ScientificCalculator scientificCalculator=new ScientificCalculator();
+		ProgrammerCalculator proCalculator=new ProgrammerCalculator();
+		proCalculator.bitwise();
+		scientificCalculator.substraction();
+		scientificCalculator.trignomentri();
+		calculator.addition();
+		proCalculator.division();
+
+	}
+}
+
+o/p:
+======
+bitwise
+substraction
+trignomentri
+addition
+division
+
+
+
+
+
+3. Radio, Tv, Dvd Player - identify the Apt parent class and implement inheritance
+   
+ Electronic Broadcast (Parent class)
+
+    Audio() {}
+    Play() {}
+    Stop() {}
+
+Radio (Child class)
+    
+    Audio() {}
+    Recording() {}- unique method
+    Play() {}
+    Stop() {}
+    
+
+TV  (Child class)
+    Audio() {}
+    Play() {}
+    Stop() {}
+    Video() {} -unique method
+    
+
+DVD Player (Child class)
+    
+    Audio() {}
+    Play() {}
+    Stop() {}
+    Mic() {} -Unique method
+
+4. Admin, Manager, Finance - idetify the parent class and implement inheritance
+Department (Parent class)
+     login() {}
+     logout() {}  
+     campany() {}
+
+Manager  (child class)
+     login() {} 
+     logout() {} 
+     campany() {}
+     employee_Records() {} // Unique method
+     
+Finance  (child class)
+
+     login() {}
+     logout() {}
+     campany() {}
+     accounts() {}// unique method
+     salary() {} // unique method
+
